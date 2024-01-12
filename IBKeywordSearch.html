@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin's Website :0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html#header" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+                            <li class="active"><a href="IBKeywordSearch.html">IB Keyword Search</a></li>
+							<li><a href="BoyScouts.html"> Boy Scouts</a></li>
+							<li><a href="researchConrad.html">Research Project & Conrad Challenge</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+                <div id="main">
+
+                    <!-- Featured Post -->
+                        <article class="post featured">
+                            <header class="major">
+                                <h2><a href="#">IB Keyword Search</a></h2>
+                                <p>This is a project that was created to help teachers in the IB program efficiently and easily create tests from past papers. </p>
+                            </header>
+                            <a href="#" class="image main"><img src="images/mainGUI.png" alt="" /></a>
+                            <footer>
+                                <p><center>This is an image of the IB Keyword Search main Graphical User Interface.</center></p>
+                            </footer>
+                        </article>
+
+                    <!-- Posts -->
+                        <section class="posts">
+                            <article>
+                                <header>
+                                    <h2>Instructions Tab</h2>
+                                </header>
+                                <a class="image fit"><img src="images/InstructionsTab.png" alt="" /></a>
+                                <p>Keeping in mind that the program may not be intuitive to every single teacher, I created an Instructions Button that would open an Instructions Tab with directions and common errors. These Instructions also has information relating to the change folder accessed function of the program as this part of the program can be especially confusing.</p>
+                            </article>
+                            <article>
+                                <header>
+                                    <h2>Change Folder Accessed Tab</h2>
+                                </header>
+                                <a class="image fit"><img src="images/changeFolder.png" alt="" /></a>
+                                <p>Keeping in mind that some users may rather store the papers in a location rather than the default location, I created this tab that writes to a file and changes the location the program is accessing. Each name in the list is a link, in order to change the folder accessed to that folder the user just needs to click the link and the "Done" button when finished.</p>
+                            </article>
+                            <article>
+                                <header>
+                                    <h2>Main Graphical User Interface</h2>
+                                </header>
+                                <a class="image fit"><img src="images/searching.png" alt="" /></a>
+                                <p>In order to display that the program is working when the user searches something, the program displays a loading alert. This loading alert is run using multithreading, while searching through the tests, the program simultaneously calculates the progess of the search. </p>
+                            </article>
+                            <article>
+                                <header>
+                                    <h2>Output</h2>
+                                </header>
+                                <a class="image fit"><img src="images/tests.png" alt="" /></a>
+                                <p>After the program is done searching, it outputs the tests separated into 6 groups paper 1s, 2s, 3s, and each of their markschemes. Each paper name in the list is clickable and will open the exam file as a pdf in the user's default pdf viewer. The questions where the keyword was found will update in the question number tab when an exam is opened.</p>
+                            </article>
+                            <article>
+                                <header>
+                                    <h2>Error Handling</h2>
+                                </header>
+                                <a class="image fit" alt=""><img src="images/error.png"/></a>
+                                <p>The program may run into errors such as "Keyword was not found!" When the program runs into errors like these it will catch and an alert tab will pop up with the respective error message allowing the user to adjust the search term in this case. This is just one example of the error handling the program does.</p>
+                            </article>
+                            <article></article>
+                        </section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<form method="post" action="#">
+							<input type="text" id="name" placeholder="Name" /> <br>
+							<input type="email" id="email" placeholder="Email" /> <br>
+							<textarea id="message" placeholder="Message" rows="7"></textarea> <br>
+							<input type="button" value="Send Message" class="button primary" onclick="sendEmail()" />
+						</form>
+					</section>
+					<section class="split contact">
+						<section class="alt">
+							<h3>Mailing Address</h3>
+							<p>101 Hickey Blvd Suite A #404<br />
+							South San Francisco, CA 94080</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="tel:4153351462">+1(415)-335-1462</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:kevindnie@gmail.com">kevindni@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Contact me!</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/kevin-nie-b99874286/"><span class="image"><img src="images/LinkedIn.png" width=20 height=20></span></a></li>
+								<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+								<li><a href="https://github.com/KevinTvT"><span class="image"><img src="images/GithubLogo.png" width=20 heigh=20></span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+			function sendEmail() {
+				var name = document.getElementById("name").value;
+				var email = document.getElementById("email").value;
+				var msg = document.getElementById("message").value;
+	
+				window.open('mailto:kevindnie@gmail.com?subject=Feedback for splint&body=' + msg);
+			}
+		</script>
+
+</body>
+</html>
